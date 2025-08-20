@@ -2,12 +2,11 @@
 using namespace std;
 
 int main() {
+  char name[50];
 
-    char name[50];
-    
-    cout<<"Type your USER NAME: " ;
-    cin>>name;
-    cout<<"Your USER NAME is "<<name;
+  cout << "Type your USER NAME: ";
+  cin >> name;
+  cout << "Your USER NAME is " << name;
 
-    return 0;
+  return 0;
 }

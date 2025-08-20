@@ -16,13 +16,13 @@ int main() {
     cout << fixed << setprecision(1);
 
     if (bmi<18.5) {
-        cout << "過瘦，你的BMI為:" << bmi << endl;
+        cout << "過瘦，你的BMI為: " << bmi << endl;
     }
     else if (bmi>=18.5 && bmi<=24) {
-        cout << "正常，你的BMI為:" << bmi << endl;
+        cout << "正常，你的BMI為: " << bmi << endl;
     }
     else {
-        cout << "你也太胖了吧! 你的BMI為:" << bmi << endl;
+        cout << "你也太胖了吧! 你的BMI為: " << bmi << endl;
     }
 
     return 0;
