@@ -1,16 +1,17 @@
 #include <iomanip>
 #include <iostream>
+
 using namespace std;
 
 float bmiCalculate(float h, float kg) { return kg / (h * h); }
 
 string bmiStatus(float bmi) {
   if (bmi < 18.5) {
-    return "過瘦";
+    return "bony";
   } else if (bmi >= 18.5 && bmi < 24) {
-    return "適中";
+    return "Fit";
   } else {
-    return "過重";
+    return "Fat";
   }
 }
 
@@ -19,17 +20,17 @@ int main() {
   char choice;
 
   do {
-    cout << "輸入身高(公尺): ";
+    cout << "Type height(m): ";
     cin >> h;
-    cout << "輸入體重(公斤): ";
+    cout << "Type Weight(kg): ";
     cin >> kg;
     float bmi = bmiCalculate(h, kg);
     string status = bmiStatus(bmi);
     cout << fixed << setprecision(1);
-    cout << "你的BMI為: " << bmi << ", " << status << "。" << endl;
-    cout << "是否繼續?(Y/N): ";
+    cout << "BMI: " << bmi << ", " << status << "." << endl;
+    cout << "Continue?(y/n): ";
     cin >> choice;
   } while (choice == 'Y' || choice == 'y');
-  cout << "下次見!" << endl;
+  cout << "see you next time!" << endl;
   return 0;
 }
